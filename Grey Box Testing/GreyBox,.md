@@ -87,6 +87,8 @@
 
 ## 🐞 Bug/Gangguan yang Ditemukan
 
+![Alt Text](Picture5.png)
+
 > Pada halaman **Tambah Produk**, ditemukan bug saat mengisi **input stok**:
 - Meskipun input bertipe `number`, pengguna masih bisa mengetik karakter huruf (misalnya "E").
 - Browser hanya memberikan pesan: *"Please enter a number."*
