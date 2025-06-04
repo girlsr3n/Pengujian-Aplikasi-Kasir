@@ -53,7 +53,8 @@
 | Buku          | 5000         | ATK              | P      |
 | Pulpen        | 4000         | ATK              | P      |
 | Penghapus     | 1000         | ATK              | P      |
-![Alt Text](images/diagram.png)
+
+-![Alt Text](Picture1.png)
 
 **Analisa Hasil Test:**
 - Kombinasi dari parameter dan kondisi berhasil dalam tahap pencarian.
