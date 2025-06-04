@@ -54,7 +54,11 @@
 | Pulpen        | 4000         | ATK              | P      |
 | Penghapus     | 1000         | ATK              | P      |
 
--![Alt Text](Picture1.png)
+-![Alt Text](Picture1.png) ![Alt Text](Picture2.png)
+-![Alt Text](Picture3.png) ![Alt Text](Picture4.png)
+
+
+
 
 **Analisa Hasil Test:**
 - Kombinasi dari parameter dan kondisi berhasil dalam tahap pencarian.
