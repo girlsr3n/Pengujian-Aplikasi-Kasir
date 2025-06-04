@@ -4,9 +4,11 @@ WHITE BOX TESTING
 
 ![Login Screenshot](login.png) 
 (login.php)
+
 Pemeriksaan manual oleh programmer terhadap logika dan nilai variabel.
 
 ![Login Screenshot](login1.gif) (tambah_produk.php)
+
 Variabel utama langsung dideklarasikan dan digunakan tanpa kompleksitas tinggi, dan tidak ada manipulasi atau kalkulasi kompleks.
 
 Validasi dilakukan eksplisit, mudah ditelusuri.
@@ -14,9 +16,9 @@ Validasi dilakukan eksplisit, mudah ditelusuri.
 
 2\. Code Walkthrough
 
-![Login Screenshot](wt1.png) Pemeriksaan struktur logika program secara kolektif (tim) untuk menemukan error.
+![Login Screenshot](wt1.png) (proses_transaksi.php)
 
-(proses_transaksi.php)
+Pemeriksaan struktur logika program secara kolektif (tim) untuk menemukan error.
 
 - Setiap alur: mulai dari input form → validasi → eksekusi database → output, **terstruktur dan jelas**.
 - Tidak ada logika yang membingungkan atau jalur kode yang tidak bisa dijangkau (unreachable).
@@ -26,7 +28,9 @@ Validasi dilakukan eksplisit, mudah ditelusuri.
 
 3\. Formal Inspection
 
-![Login Screenshot](fi1.png) Evaluasi struktur kode, validasi format, ketepatan input/output, dan error handling.
+![Login Screenshot](fi1.png) 
+
+Evaluasi struktur kode, validasi format, ketepatan input/output, dan error handling.
 
 Dibagian login, **tidak ada pembatasan panjang karakter atau karakter ilegal**.
 
@@ -35,6 +39,8 @@ Dibagian login, **tidak ada pembatasan panjang karakter atau karakter ilegal**.
 Dibagian tambah produk, Langsung dikonversi tanpa cek apakah input itu benar-benar angka dari sisi user.
 
 4\. Control Flow Testing
+
+Menguji seluruh jalur keputusan (if, else, switch) dan memastikan jalur dieksekusi dengan benar.
 
 ![Login Screenshot](cf1.png) ![Login Screenshot](cf2.png) 
 
