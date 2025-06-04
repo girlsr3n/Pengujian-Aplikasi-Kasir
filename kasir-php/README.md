@@ -11,7 +11,7 @@ Proyek ini adalah aplikasi web kasir sederhana berbasis **PHP Native** yang menc
 |------------------------|------------------------|
 | Siti Rahmah            | 👨‍💻 Developer          |
 | Rifa Vida Zahrani      | 🧪 Black Box Tester     |
-| Kharunnisa Dwi W.      | ⚙️ White Box Tester     |
+| Khairunnisa Dwi W.      | ⚙️ White Box Tester     |
 | Ratna Santika          | 🧩 Grey Box Tester      |
 
 ---
@@ -81,7 +81,6 @@ Proyek ini adalah aplikasi web kasir sederhana berbasis **PHP Native** yang menc
 ## 📊 Hasil Uji & Dokumentasi
 
 - Hasil pengujian tercatat secara manual oleh tim tester.
-- Tidak tersedia folder `tests/` otomatis.
 - Laporan hasil uji tersedia dalam dokumen terpisah (Word/PDF/Excel), meliputi:
   - Studi kasus pengujian login, transaksi, produk.
   - Simulasi input tidak valid dan manipulasi data.
