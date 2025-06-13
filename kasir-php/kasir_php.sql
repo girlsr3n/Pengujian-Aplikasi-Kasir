@@ -6,7 +6,9 @@ CREATE TABLE IF NOT EXISTS products (
     id INT AUTO_INCREMENT PRIMARY KEY,
     nama VARCHAR(100) NOT NULL,
     harga INT NOT NULL,
-    stok INT DEFAULT 0
+    stok INT DEFAULT 0,
+     diskon INT DEFAULT 0,
+    kategori VARCHAR(100) NOT NULL
 );
 
 -- Tabel pengguna
@@ -21,7 +23,8 @@ CREATE TABLE IF NOT EXISTS users (
 CREATE TABLE IF NOT EXISTS transactions (
     id INT AUTO_INCREMENT PRIMARY KEY,
     tanggal DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
-    total INT NOT NULL
+    total INT NOT NULL,
+    metode_pembayaran VARCHAR(50) DEFAULT 'Tunai'
 );
 
 -- Tabel detail transaksi
