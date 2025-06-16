@@ -6,8 +6,8 @@
 
 | No | Skenario Uji     | Input Username | Input Password | Langkah Pengujian                      | Hasil yang Diharapkan                 | Status |
 |----|------------------|----------------|----------------|----------------------------------------|----------------------------------------|--------|
-| 1  | Login            | admin          | admin123       | Pengisian form login dan klik login   | Dialihkan ke Dashboard                | P      |
-| 2  | Username Salah   | ratna          | 123456         | Pengisian form login dan klik login   | Tampil pesan error "Username dan Password salah" | P  |
+| 1  | Login            | admin          | admin123       | Pengisian form login dan klik login   | Dialihkan ke Dashboard                | valid  |
+| 2  | Username Salah   | ratna          | 123456         | Pengisian form login dan klik login   | Tampil pesan error "Username dan Password salah" | valid |
 
 ---
 
