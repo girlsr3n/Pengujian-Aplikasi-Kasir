@@ -15,15 +15,15 @@
 
 | No | Nama Produk   | Harga Produk | Stok | Status |
 |----|---------------|--------------|------|--------|
-| 1  | Pensil        | 3000         | 18   | P      |
-| 2  | Buku          | 5000         | 9    | P      |
-| 3  | Pulpen        | 4000         | 15   | P      |
-| 4  | Buku Gambar   | 3000         | 3    | P      |
-| 5  | Tipe X        | 5000         | 2    | P      |
-| 6  | White Board   | 15000        | 8    | P      |
-| 7  | Origami       | 10000        | 10   | P      |
-| 8  | HVS           | 500          | 10   | P      |
-| 9  | Penghapus     | 1000         | 5    | P      |
+| 1  | Pensil        | 3000         | 18   | valid     |
+| 2  | Buku          | 5000         | 9    | valid     |
+| 3  | Pulpen        | 4000         | 15   | valid     |
+| 4  | Buku Gambar   | 3000         | 3    | valid     |
+| 5  | Tipe X        | 5000         | 2    | valid     |
+| 6  | White Board   | 15000        | 8    | valid     |
+| 7  | Origami       | 10000        | 10   | valid     |
+| 8  | HVS           | 500          | 10   | valid     |
+| 9  | Penghapus     | 1000         | 5    | valid     |
 
 ---
 
@@ -31,11 +31,11 @@
 
 | No | Nama Produk   | Jumlah Produk | Harga Produk | Total Transaksi | Status |
 |----|---------------|----------------|---------------|------------------|--------|
-| 1  | Pensil        | 2              | 3000          | 6000             | P      |
-| 2  | Buku          | 3              | 5000          | 15000            | P      |
-| 3  | Buku Gambar   | 1              | 3000          | 3000             | P      |
-| 4  | Penghapus     | 1              | 1000          | 1000             | P      |
-| 5  | Pulpen        | 1              | 4000          | 4000             | P      |
+| 1  | Pensil        | 2              | 3000          | 6000             | valid       |
+| 2  | Buku          | 3              | 5000          | 15000            | valid       |
+| 3  | Buku Gambar   | 1              | 3000          | 3000             | valid       |
+| 4  | Penghapus     | 1              | 1000          | 1000             | valid       |
+| 5  | Pulpen        | 1              | 4000          | 4000             | valid       |
 
 ---
 
@@ -49,10 +49,10 @@
 
 | Nama Produk   | Harga Produk | Kategori Produk | Status |
 |---------------|--------------|------------------|--------|
-| Pensil        | 3000         | ATK              | P      |
-| Buku          | 5000         | ATK              | P      |
-| Pulpen        | 4000         | ATK              | P      |
-| Penghapus     | 1000         | ATK              | P      |
+| Pensil        | 3000         | ATK              | valid       |
+| Buku          | 5000         | ATK              | valid       |
+| Pulpen        | 4000         | ATK              | valid       |
+| Penghapus     | 1000         | ATK              | valid       |
 
 -![Alt Text](Picture1.png) ![Alt Text](Picture2.png)
 -![Alt Text](Picture3.png) ![Alt Text](Picture4.png)
