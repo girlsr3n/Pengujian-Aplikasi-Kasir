@@ -21,8 +21,8 @@
 - Fitur **Metode Pembayaran**
 - Fitur **Cetak Struk**
 
--![Alt Text](Transaksibaru.2.jpeg) 
--![Alt Text](Strukbelanja.2.jpeg)
+![Struk Transaksi](Strukbelanja.2.jpeg)
+![Tampilan Transaksi](Transaksibaru.2.jpeg)
 
 ### 📌 Fitur Diskon
 - Diskon ditampilkan dalam bentuk persentase di tabel transaksi.
