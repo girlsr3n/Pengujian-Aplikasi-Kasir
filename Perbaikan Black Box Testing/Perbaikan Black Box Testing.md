@@ -17,15 +17,15 @@
 
 | No | Fitur | Input / Skenario | Expected Output | Status | Screenshot |
 |----|-------|------------------|------------------|--------|------------|
-| 1 | Login | Username dan password valid | Berhasil login ke dashboard | ✅ | <img src="screenshots/screenshot blackbox testing/login-berhasil.png" width="150"> |
-| 2 | Login | Username salah, password benar | Gagal login, muncul pesan error | ✅ | <img src="screenshots/screenshot blackbox testing/login-gagal.png" width="150"> |
-| 3 | Input Barang | Nama: “Kopi”, Harga: 5000, Stok: 10 | Barang berhasil disimpan | ✅ | <img src="screenshots/screenshot blackbox testing/input-barang-valid.png" width="150"> |
-| 4 | Transaksi | Uang bayar = total belanja | Transaksi berhasil, tidak ada kembalian | ✅ | <img src="screenshots/screenshot blackbox testing/transaksi-pas.png" width="150"> |
-| 5 | Transaksi | Uang bayar > total belanja | Kembalian ditampilkan | ✅ | <img src="screenshots/screenshot blackbox testing/transaksi-kembalian.png" width="150"> |
-| 6 | Tambah Kategori | Nama kategori valid: “Minuman” | Kategori berhasil disimpan | ✅ | <img src="screenshots/screenshot blackbox testing/kategori-valid.png" width="150"> |
-| 7 | Tambah Kategori | Nama kategori kosong | Validasi gagal: “Nama kategori tidak boleh kosong” | ✅ | <img src="screenshots/screenshot blackbox testing/kategori-kosong.png" width="150"> |
-| 8 | Diskon | Nominal diskon valid (misal 10%) | Diskon diterapkan ke total belanja | ✅ | <img src="screenshots/screenshot blackbox testing/diskon-valid.png" width="150"> |
-| 9 | Diskon | Nominal diskon > 100 | Validasi gagal: “Diskon akan otomatis maksimal 100%” | ✅ | <img src="screenshots/screenshot blackbox testing/diskon-berlebihan.png" width="150"> |
+| 1 | Login | Username dan password valid | Berhasil login ke dashboard | ✅ | <img src="screenshot blackbox testing/login-berhasil.png" width="150"> |
+| 2 | Login | Username salah, password benar | Gagal login, muncul pesan error | ✅ | <img src="screenshot blackbox testing/login-gagal.png" width="150"> |
+| 3 | Input Barang | Nama: “Kopi”, Harga: 5000, Stok: 10 | Barang berhasil disimpan | ✅ | <img src="screenshot blackbox testing/input-barang-valid.png" width="150"> |
+| 4 | Transaksi | Uang bayar = total belanja | Transaksi berhasil, tidak ada kembalian | ✅ | <img src="screenshot blackbox testing/transaksi-pas.png" width="150"> |
+| 5 | Transaksi | Uang bayar > total belanja | Kembalian ditampilkan | ✅ | <img src="screenshot blackbox testing/transaksi-kembalian.png" width="150"> |
+| 6 | Tambah Kategori | Nama kategori valid: “Minuman” | Kategori berhasil disimpan | ✅ | <img src="screenshot blackbox testing/kategori-valid.png" width="150"> |
+| 7 | Tambah Kategori | Nama kategori kosong | Validasi gagal: “Nama kategori tidak boleh kosong” | ✅ | <img src="screenshot blackbox testing/kategori-kosong.png" width="150"> |
+| 8 | Diskon | Nominal diskon valid (misal 10%) | Diskon diterapkan ke total belanja | ✅ | <img src="screenshot blackbox testing/diskon-valid.png" width="150"> |
+| 9 | Diskon | Nominal diskon > 100 | Validasi gagal: “Diskon akan otomatis maksimal 100%” | ✅ | <img src="screenshot blackbox testing/diskon-berlebihan.png" width="150"> |
 
 ---
 
