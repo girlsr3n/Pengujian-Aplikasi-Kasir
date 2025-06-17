@@ -14,6 +14,7 @@
 ---
 
 ## ✅ Equivalence Partitioning
+Equivalence Partitioning bertujuan untuk mengelompokkan input ke dalam kelas ekuivalen dan menguji satu perwakilan dari setiap kelas tersebut (baik valid maupun tidak valid)
 
 | No | Fitur | Input / Skenario | Expected Output | Status | Screenshot |
 |----|-------|------------------|------------------|--------|------------|
@@ -30,7 +31,7 @@
 ---
 
 ## ✅ Boundary Value Analysis
-
+Boundary Value Analysis digunakan untuk menguji batas-batas ekstrem dari input (seperti nilai minimum, maksimum, atau nol) yang seringkali menjadi sumber kesalahan.
 | No | Fitur | Input / Skenario | Expected Output | Status | Screenshot |
 |----|-------|------------------|------------------|--------|------------|
 | 1 | Input Barang | Harga = -1 | Validasi gagal: "Harga tidak boleh negatif" | ✅ | <img src="screenshot blackbox testing/harga-negatif.png" width="200"> |
@@ -44,7 +45,7 @@
 ---
 
 ## ✅ Robustness Testing
-
+Robustness Testing mengevaluasi bagaimana sistem menangani input yang tidak biasa atau ekstrem seperti karakter aneh, input kosong, atau panjang berlebih.
 | No | Fitur | Input / Skenario | Expected Output | Status | Screenshot |
 |----|-------|------------------|------------------|--------|------------|
 | 1 | Login | Username kosong | Validasi: "Username tidak boleh kosong" | ✅ | <img src="screenshot blackbox testing/login-kosong.png" width="200"> |
@@ -56,7 +57,7 @@
 ---
 
 ## ✅ Decision Table Testing
-
+Decision Table Testing digunakan untuk menguji semua kombinasi logika dalam sistem yang menghasilkan keputusan tertentu.
 | No | Fitur | Input / Skenario | Expected Output | Status | Screenshot |
 |----|-------|------------------|------------------|--------|------------|
 | 1 | Tambah Keranjang | Barang tersedia + stok cukup | Barang berhasil ditambahkan | ✅ | <img src="screenshot blackbox testing/tambah-keranjang.png" width="200"> |
@@ -67,7 +68,7 @@
 ---
 
 ## ✅ Behavior Driven Testing (BDD)
-
+Behavior Driven Development (BDD) menguji perilaku sistem berdasarkan skenario pengguna, berfokus pada interaksi nyata yang dilakukan user.
 | No | Fitur | Input / Skenario | Expected Output | Status | Screenshot |
 |----|-------|------------------|------------------|--------|------------|
 | 1 | Transaksi | User memilih barang → input jumlah → klik bayar | Transaksi berhasil dan total ditampilkan | ✅ | <img src="screenshot blackbox testing/transaksi-sukses.png" width="200"> |
@@ -77,7 +78,7 @@
 ---
 
 ## ✅ Sample Testing
-
+Sample Testing menguji contoh-contoh input representatif dari kelas input tertentu untuk memastikan bahwa sistem menerima data umum dengan benar.
 | No | Fitur | Input / Skenario | Expected Output | Status | Screenshot |
 |----|-------|------------------|------------------|--------|------------|
 | 1 | Input Barang | Nama = “Kopi”, “123kopi”, “kopi123” | Semua diterima sebagai input valid | ✅ | <img src="screenshot blackbox testing/nama-beragam.png" width="200"> |
