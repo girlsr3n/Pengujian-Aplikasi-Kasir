@@ -8,7 +8,7 @@
 | **Boundary Value Analysis** | Uji nilai batas (min/max/0) dari input |
 | **Robustness Testing** | Uji input ekstrem (panjang, karakter aneh, input kosong) |
 | **Decision Table Testing** | Uji kombinasi logika yang menghasilkan keputusan |
-| **Behavior Testing (BDD)** | Uji alur penggunaan berdasarkan interaksi pengguna |
+| **Behavior Testing** | Uji alur penggunaan berdasarkan interaksi pengguna |
 | **Sample Testing** | Uji beberapa nilai representatif dalam satu kelas input |
 
 ---
@@ -67,7 +67,7 @@ Decision Table Testing digunakan untuk menguji semua kombinasi logika dalam sist
 
 ---
 
-## ✅ Behavior Driven Testing (BDD)
+## ✅ Behavior Testing 
 Behavior Driven Development (BDD) menguji perilaku sistem berdasarkan skenario pengguna, berfokus pada interaksi nyata yang dilakukan user.
 | No | Fitur | Input / Skenario | Expected Output | Status | Screenshot |
 |----|-------|------------------|------------------|--------|------------|
@@ -99,7 +99,7 @@ Pengujian menggunakan **Equivalence Partitioning**, **Boundary Value Analysis**,
 Melalui **Decision Table Testing**, semua kombinasi kondisi yang mungkin terjadi dalam proses diskon dan penambahan keranjang telah diuji, dan aplikasi menunjukkan **perilaku yang benar**.
 
 ### ✅ Skenario Pengguna Berhasil Dijalankan
-**Behavior Driven Testing (BDD)** membuktikan bahwa **alur penggunaan dari perspektif pengguna akhir**, mulai dari memilih barang hingga logout, berjalan **mulus tanpa kendala**.
+**Behavior Testing** membuktikan bahwa **alur penggunaan dari perspektif pengguna akhir**, mulai dari memilih barang hingga logout, berjalan **mulus tanpa kendala**.
 
 ### ✅ Input Umum Terverifikasi dengan Baik
 Pengujian **Sample Testing** memastikan bahwa **data-data umum dan kombinasi variasi nama, harga, serta stok** diterima dengan baik oleh sistem.
