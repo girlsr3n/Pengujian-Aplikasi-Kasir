@@ -83,3 +83,28 @@
 | 1 | Input Barang | Nama = “Kopi”, “123kopi”, “kopi123” | Semua diterima sebagai input valid | ✅ | <img src="screenshot blackbox testing/nama-beragam.png" width="200"> |
 | 2 | Input Barang | Nama = “kopi”, Harga = 0, Stok = 5 | Valid: Harga boleh nol | ✅ | <img src="screenshot blackbox testing/harga-nol.png" width="200"> |
 | 3 | Input Barang | Nama = “teh”, Harga = 5000, Stok = 0 | Valid: Stok boleh nol | ✅ | <img src="screenshot blackbox testing/stok-nol.png" width="200"> |
+
+## 🧾 Kesimpulan
+
+Berdasarkan pengujian menggunakan berbagai metode dalam **Black Box Testing**, berikut kesimpulan yang dapat diambil:
+
+### ✅ Fitur Berjalan Sesuai Harapan
+Seluruh fitur utama aplikasi seperti **login**, **input barang**, **transaksi**, **diskon**, dan **cetak struk** berhasil diuji dan berjalan dengan baik, sesuai dengan skenario input yang diberikan.
+
+### ✅ Validasi Input Bekerja dengan Baik
+Pengujian menggunakan **Equivalence Partitioning**, **Boundary Value Analysis**, dan **Robustness Testing** menunjukkan bahwa aplikasi mampu menangani **input valid maupun tidak valid** secara tepat dengan pesan kesalahan yang jelas.
+
+### ✅ Logika Keputusan Diuji Secara Lengkap
+Melalui **Decision Table Testing**, semua kombinasi kondisi yang mungkin terjadi dalam proses diskon dan penambahan keranjang telah diuji, dan aplikasi menunjukkan **perilaku yang benar**.
+
+### ✅ Skenario Pengguna Berhasil Dijalankan
+**Behavior Driven Testing (BDD)** membuktikan bahwa **alur penggunaan dari perspektif pengguna akhir**, mulai dari memilih barang hingga logout, berjalan **mulus tanpa kendala**.
+
+### ✅ Input Umum Terverifikasi dengan Baik
+Pengujian **Sample Testing** memastikan bahwa **data-data umum dan kombinasi variasi nama, harga, serta stok** diterima dengan baik oleh sistem.
+
+---
+
+### 📌 Ringkasan
+Aplikasi kasir ini telah **berhasil melewati semua pengujian fungsional** dengan metode Black Box Testing. Sistem terbukti **stabil terhadap berbagai jenis input** dan dapat **diandalkan untuk operasional pengguna sehari-hari**.
+
