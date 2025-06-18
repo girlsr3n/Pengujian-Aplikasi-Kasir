@@ -1,6 +1,9 @@
-WHITE BOX TESTING
+**WHITE BOX TESTING**
 
-1\. Desk Checking
+Pengujian white Box testing berfokus pada 3 file utama, yaitu login.php, tambah_produk.php, dan proses_transaksi.php. Namun ada beberapa file yang diuji karena keterhubungannya dengan pengujian.
+
+**1\. Desk Checking**
+
 Desk checking adalah teknik dalam white-box testing (pengujian kotak putih) yang dilakukan secara manual oleh programmer atau pengembang untuk meninjau logika dan alur dari sebuah program atau algoritma tanpa menjalankannya secara langsung di komputer.
 Desk checking dilakukan dengan cara menelusuri kode program atau algoritma baris demi baris secara manual. Tujuannya adalah untuk memastikan bahwa logika program berjalan sesuai harapan, dan tidak terdapat kesalahan seperti:
 
@@ -24,7 +27,8 @@ Variabel utama langsung dideklarasikan dan digunakan tanpa kompleksitas tinggi, 
 
 
 
-2\. Code Walkthrough
+**2\. Code Walkthrough**
+
 Code walkthrough adalah proses peninjauan kode sumber (source code) secara informal dan sistematis oleh sekelompok orang (biasanya pengembang, tester, atau analis) untuk menemukan kesalahan, meningkatkan kualitas, dan memastikan bahwa kode sesuai dengan standar dan persyaratan yang ditentukan.
 
 ![Login Screenshot](wt1.png) ![Login Screenshot](wt2.png) 
@@ -37,7 +41,8 @@ Pemeriksaan struktur logika program secara kolektif (tim) untuk menemukan error.
 - Tidak ada logika yang membingungkan atau jalur kode yang tidak bisa dijangkau (unreachable).
 - Developer bisa dengan mudah menjelaskan maksud setiap blok kode jika dilakukan review bersama tim.
 
-3\. Formal Inspection
+**3\. Formal Inspection**
+
 Formal inspection adalah proses peninjauan kode atau dokumen perangkat lunak secara sistematis, terstruktur, dan terdokumentasi, dengan tujuan utama menemukan dan memperbaiki kesalahan sejak dini dalam siklus pengembangan perangkat lunak.
 
 a. db.php
@@ -57,7 +62,7 @@ Dibagian tambah produk, langsung dikonversi tanpa cek apakah input itu benar-ben
 ![Login Screenshot](fi2.png) 
 
 
-4\. Control Flow Testing
+**4\. Control Flow Testing**
 
 Menguji seluruh jalur keputusan (if, else, switch) dan memastikan jalur dieksekusi dengan benar.
 
@@ -67,7 +72,7 @@ Menguji seluruh jalur keputusan (if, else, switch) dan memastikan jalur diekseku
 
 Pengujian dilakukan terhadap semua kondisi tersebut dengan input yang sesuai.
 
-5\. Data Flow Testing
+**5\. Data Flow Testing**
 
 | Komponen | Definisi | Penggunaan | Deskripsi |
 | --- | --- | --- | --- |
@@ -84,7 +89,7 @@ Pengujian dilakukan terhadap semua kondisi tersebut dengan input yang sesuai.
 ![Login Screenshot](df.png) 
 
 
-6\. Basic Path Testing
+**6\. Basic Path Testing**
 
 Identifikasi semua jalur eksekusi yang mungkin dijalankan dalam suatu program
 
@@ -127,7 +132,7 @@ Ada **3 jalur independen** logika yang perlu diuji:
 2. Form disubmit → input valid → simpan
 3. Form disubmit → input tidak valid → tampilkan error
 
-7\. Loop Testing
+**7\. Loop Testing**
 
 Tidak ada struktur loop (perulangan) di login.php, pengujian ini tidak relevan. Bukan berarti error — tapi teknik ini tidak diterapkan karena tidak ada loop.
 
