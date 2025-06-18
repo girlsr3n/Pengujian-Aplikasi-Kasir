@@ -42,16 +42,20 @@ Formal inspection adalah proses peninjauan kode atau dokumen perangkat lunak sec
 
 a. db.php
 Input username dan password langsung digunakan
+![Login Screenshot](dbphp.png) 
+
+(Gambar db.php)
+
+b. Tampilan Login
+Dibagian login, tidak ada pembatasan panjang karakter atau karakter ilegal.
 
 ![Login Screenshot](fi1.png) 
 
-Evaluasi struktur kode, validasi format, ketepatan input/output, dan error handling.
-
-Dibagian login, **tidak ada pembatasan panjang karakter atau karakter ilegal**.
+c. Tampilan Tambah Produk
+Dibagian tambah produk, langsung dikonversi tanpa cek apakah input itu benar-benar angka dari sisi user.
 
 ![Login Screenshot](fi2.png) 
 
-Dibagian tambah produk, Langsung dikonversi tanpa cek apakah input itu benar-benar angka dari sisi user.
 
 4\. Control Flow Testing
 
@@ -136,6 +140,7 @@ Tidak ada struktur loop (perulangan) di login.php, pengujian ini tidak relevan. 
 proses_transaksi.php – LULUS Loop Testing
 
 - ![Login Screenshot](loop1.png)
+  
 - Menggunakan loop foreach untuk memproses setiap produk yang dibeli.
 - Setiap iterasi mempengaruhi:
   - Pengurangan stok produk
