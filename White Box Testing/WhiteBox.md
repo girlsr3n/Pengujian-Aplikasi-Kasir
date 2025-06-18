@@ -1,22 +1,35 @@
 WHITE BOX TESTING
 
 1\. Desk Checking
+Desk checking adalah teknik dalam white-box testing (pengujian kotak putih) yang dilakukan secara manual oleh programmer atau pengembang untuk meninjau logika dan alur dari sebuah program atau algoritma tanpa menjalankannya secara langsung di komputer.
+Desk checking dilakukan dengan cara menelusuri kode program atau algoritma baris demi baris secara manual. Tujuannya adalah untuk memastikan bahwa logika program berjalan sesuai harapan, dan tidak terdapat kesalahan seperti:
+
+a. kesalahan logika (logical error),
+
+b. kesalahan alur kontrol (control flow),
+
+c. atau kesalahan dalam penggunaan variabel.
 
 ![Login Screenshot](login.png) 
+
 (login.php)
 
 Pemeriksaan manual oleh programmer terhadap logika dan nilai variabel.
 
-![Login Screenshot](login1.gif) (tambah_produk.php)
+![Login Screenshot](login1.gif) 
 
-Variabel utama langsung dideklarasikan dan digunakan tanpa kompleksitas tinggi, dan tidak ada manipulasi atau kalkulasi kompleks.
+(tambah_produk.php)
 
-Validasi dilakukan eksplisit, mudah ditelusuri.
+Variabel utama langsung dideklarasikan dan digunakan tanpa kompleksitas tinggi, dan tidak ada manipulasi atau kalkulasi kompleks. Validasi dilakukan eksplisit, mudah ditelusuri.
+
 
 
 2\. Code Walkthrough
+Code walkthrough adalah proses peninjauan kode sumber (source code) secara informal dan sistematis oleh sekelompok orang (biasanya pengembang, tester, atau analis) untuk menemukan kesalahan, meningkatkan kualitas, dan memastikan bahwa kode sesuai dengan standar dan persyaratan yang ditentukan.
 
-![Login Screenshot](wt1.png) (proses_transaksi.php)
+![Login Screenshot](wt1.png) ![Login Screenshot](wt2.png) 
+                  
+                  (proses_transaksi.php)
 
 Pemeriksaan struktur logika program secara kolektif (tim) untuk menemukan error.
 
@@ -24,9 +37,11 @@ Pemeriksaan struktur logika program secara kolektif (tim) untuk menemukan error.
 - Tidak ada logika yang membingungkan atau jalur kode yang tidak bisa dijangkau (unreachable).
 - Developer bisa dengan mudah menjelaskan maksud setiap blok kode jika dilakukan review bersama tim.
 
-![Login Screenshot](wt2.png) 
-
 3\. Formal Inspection
+Formal inspection adalah proses peninjauan kode atau dokumen perangkat lunak secara sistematis, terstruktur, dan terdokumentasi, dengan tujuan utama menemukan dan memperbaiki kesalahan sejak dini dalam siklus pengembangan perangkat lunak.
+
+a. db.php
+Input username dan password langsung digunakan
 
 ![Login Screenshot](fi1.png) 
 
