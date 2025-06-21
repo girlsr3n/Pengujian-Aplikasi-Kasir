@@ -7,7 +7,7 @@ if (isset($_GET['id'])) {
   $stmt->bind_param("i", $id);
 
   if ($stmt->execute()) {
-    header("Location: daftar_produk.php?msg=Produk berhasil dihapus");
+    header("Location: index.php?msg=Produk berhasil dihapus");
     exit();
   } else {
     echo "Gagal menghapus produk: " . $stmt->error;
