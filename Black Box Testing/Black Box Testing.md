@@ -39,7 +39,7 @@
 | 4 | Transaksi | Uang bayar < total (misal 9500 dari 10000) | Gagal transaksi: "Uang kurang" | ✅ | <img src="screenshot blackbox testing/transaksi-uang-kurang.png" width="250"> |
 | 5 | Diskon | Diskon = 0% | Tidak ada potongan, total tetap | ✅ | <img src="screenshot blackbox testing/diskon-nol.png" width="250"> |
 | 6 | Diskon | Diskon = 100% | Total belanja menjadi 0 | ✅ | <img src="screenshot blackbox testing/diskon-seratus.png" width="250"> |
-| 7 | Diskon | Diskon = -1% | Validasi gagal: “Diskon tidak boleh negatif” | ✅ | <img src="screenshots/screenshot blackbox testing/diskon-negatif.png" width="250"> |
+| 7 | Diskon | Diskon = -1% | Validasi gagal: “Diskon tidak boleh negatif” | ✅ | <img src="screenshot blackbox testing/diskon-negatif.png" width="250"> |
 
 ---
 
