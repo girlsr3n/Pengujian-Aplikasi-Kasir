@@ -71,7 +71,7 @@
 | No | Fitur | Input / Skenario | Expected Output | Status | Screenshot |
 |----|-------|------------------|------------------|--------|------------|
 | 19 | Transaksi | User memilih barang → input jumlah → klik bayar | Transaksi berhasil dan total ditampilkan | ✅ | <img src="screenshot blackbox testing/transaksi-sukses.png" width="250"> |
-| 20 | Cetak Struk | Setelah klik bayar → klik cetak struk | Struk transaksi muncul dalam bentuk PDF/cetak | ✅ | <img src="/screenshot blackbox testing/cetak-struk.png" width="250"> |
+| 20 | Cetak Struk | Setelah klik bayar → klik cetak struk | Struk transaksi muncul dalam bentuk PDF/cetak | ✅ | <img src="screenshot blackbox testing/cetak-struk.png" width="250"> |
 | 21 | Logout | Klik tombol logout | Sistem logout dan kembali ke halaman login | ✅ | <img src="screenshot blackbox testing/logout.png" width="250"> |
 
 ---
