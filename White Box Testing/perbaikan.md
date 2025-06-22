@@ -13,6 +13,7 @@ White Box Testing dilakukan untuk mengevaluasi logika internal dari kode program
 🔧 Daftar Perbaikan
 
 1. Modul Login
+ --  ![Login Screenshot](perbaikan1.png) 
 
 - **Masalah:** Sistem tidak memiliki validasi panjang password yang memadai.
 - **Perbaikan:**  
@@ -21,6 +22,7 @@ White Box Testing dilakukan untuk mengevaluasi logika internal dari kode program
 
 
 2. Modul Tambah Produk
+--   ![Login Screenshot](perbaikan2.png) 
 - **Masalah:** Input stok sebelumnya dapat menerima karakter non-angka.
 - **Perbaikan:**  
   - Validasi input diperketat agar **hanya angka** yang dapat dimasukkan ke dalam kolom stok.
