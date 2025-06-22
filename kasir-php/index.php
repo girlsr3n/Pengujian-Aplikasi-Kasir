@@ -9,80 +9,77 @@ include 'db.php';
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Daftar Produk - Kasir PHP</title>
-  <link rel="stylesheet" href="style.css" />
   <style>
     body {
       font-family: 'Segoe UI', sans-serif;
-      background-color: #f0f4ff;
+      background-color: #eef3fb;
       margin: 0;
-      padding: 0;
+      padding: 40px;
+      display: flex;
+      justify-content: center;
     }
 
     .container {
-      max-width: 900px;
-      margin: 40px auto;
       background: white;
-      border-radius: 12px;
-      box-shadow: 0 8px 16px rgba(0,0,0,0.1);
-      padding: 30px;
+      padding: 40px;
+      max-width: 960px;
+      width: 100%;
+      border-radius: 16px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
     }
 
     h2 {
       text-align: center;
-      color: #2c3e50;
+      color: #1e293b;
+      margin-bottom: 20px;
     }
 
     .button {
-      background-color: #4361ee;
+      background-color: #3f5efb;
       color: white;
       padding: 10px 20px;
-      border: none;
       border-radius: 8px;
+      font-weight: bold;
       text-decoration: none;
-      font-weight: 600;
-      cursor: pointer;
       display: inline-block;
-      transition: background-color 0.3s;
+      border: none;
+      cursor: pointer;
+      margin-bottom: 20px;
     }
 
     .button:hover {
-      background-color: #3a54d1;
+      background-color: #2c4acb;
     }
 
-    .search-box {
-      margin: 20px 0;
-    }
-
-    input[type="text"] {
-      padding: 10px;
+    .search-box input[type="text"] {
       width: 100%;
+      padding: 12px;
+      font-size: 1rem;
       border-radius: 8px;
       border: 1px solid #ccc;
-      background-color: #f9f9f9;
-      color: #333;
+      margin-bottom: 20px;
     }
 
     table {
       width: 100%;
       border-collapse: collapse;
-      margin-top: 20px;
     }
 
     th {
-      background-color: #4361ee;
+      background-color: #3f5efb;
       color: white;
       padding: 12px;
       text-align: center;
     }
 
     td {
-      padding: 10px;
+      padding: 12px;
       text-align: center;
-      color: #2c3e50;
+      color: #1e293b;
     }
 
     tr:nth-child(even) {
-      background-color: #f4f7ff;
+      background-color: #f5f7ff;
     }
 
     tr:nth-child(odd) {
@@ -90,37 +87,37 @@ include 'db.php';
     }
 
     .action-buttons a {
-      margin: 0 5px;
-      padding: 6px 12px;
+      padding: 6px 14px;
       border-radius: 6px;
       font-size: 0.9em;
       text-decoration: none;
-      display: inline-block;
+      font-weight: 500;
+      margin: 0 4px;
     }
 
     .edit-btn {
-      background-color: #f0ad4e;
+      background-color: #f59e0b;
       color: white;
     }
 
     .edit-btn:hover {
-      background-color: #ec971f;
+      background-color: #d97706;
     }
 
     .delete-btn {
-      background-color: #d9534f;
+      background-color: #ef4444;
       color: white;
     }
 
     .delete-btn:hover {
-      background-color: #c9302c;
+      background-color: #dc2626;
     }
 
     .empty-message {
       text-align: center;
       font-style: italic;
       color: #888;
-      padding: 20px 0;
+      padding: 20px;
     }
 
     .btn-center {
@@ -128,16 +125,17 @@ include 'db.php';
       margin-top: 30px;
     }
   </style>
+
   <script>
     function confirmDelete(productName) {
       return confirm('Yakin ingin menghapus produk: ' + productName + '?');
     }
 
     function searchProducts() {
-      let input = document.getElementById('searchInput').value.toLowerCase();
-      let rows = document.querySelectorAll("#produkTable tbody tr");
+      const input = document.getElementById('searchInput').value.toLowerCase();
+      const rows = document.querySelectorAll("#produkTable tbody tr");
       rows.forEach(row => {
-        let name = row.querySelector("td:nth-child(2)").textContent.toLowerCase();
+        const name = row.querySelector("td:nth-child(2)").textContent.toLowerCase();
         row.style.display = name.includes(input) ? "" : "none";
       });
     }
@@ -147,7 +145,6 @@ include 'db.php';
   <div class="container">
     <h2>Daftar Produk</h2>
 
-    <!-- Pesan notifikasi -->
     <?php if (isset($_GET['msg'])): ?>
       <p style="color: green; font-weight: 600; text-align:center;">
         <?= htmlspecialchars($_GET['msg']) ?>
@@ -167,24 +164,35 @@ include 'db.php';
           <th>Nama Produk</th>
           <th>Harga (Rp)</th>
           <th>Stok</th>
+          <th>Kategori</th> <!-- Tambah kolom kategori -->
+          <th>Diskon (%)</th>
           <th>Aksi</th>
         </tr>
       </thead>
       <tbody>
         <?php
           $result = $conn->query("SELECT * FROM products ORDER BY id DESC");
-          if ($result->num_rows == 0) {
-            echo '<tr><td colspan="5" class="empty-message">Belum ada produk.</td></tr>';
+          if ($result->num_rows === 0) {
+            echo '<tr><td colspan="7" class="empty-message">Belum ada produk.</td></tr>';
           } else {
             while ($row = $result->fetch_assoc()) {
+              $id = (int) $row['id'];
+              $nama = htmlspecialchars($row['nama']);
+              $harga = number_format($row['harga'], 0, ',', '.');
+              $stok = (int) $row['stok'];
+              $kategori = htmlspecialchars($row['kategori']);
+              $diskon = (int) $row['diskon'];
+
               echo "<tr>";
-              echo "<td>" . htmlspecialchars($row['id']) . "</td>";
-              echo "<td>" . htmlspecialchars($row['nama']) . "</td>";
-              echo "<td>" . number_format($row['harga'], 0, ',', '.') . "</td>";
-              echo "<td>" . (int)$row['stok'] . "</td>";
+              echo "<td>$id</td>";
+              echo "<td>$nama</td>";
+              echo "<td>$harga</td>";
+              echo "<td>$stok</td>";
+              echo "<td>$kategori</td>";
+              echo "<td>$diskon%</td>";
               echo "<td class='action-buttons'>
-                      <a href='tambah_produk.php?id=" . urlencode($row['id']) . "' class='edit-btn'>Edit</a>
-                      <a href='hapus_produk.php?id=" . urlencode($row['id']) . "' class='delete-btn' onclick=\"return confirmDelete('".htmlspecialchars(addslashes($row['nama']))."')\">Hapus</a>
+                      <a href='tambah_produk.php?id=$id' class='edit-btn'>Edit</a>
+                      <a href='hapus_produk.php?id=$id' class='delete-btn' onclick=\"return confirmDelete('$nama')\">Hapus</a>
                     </td>";
               echo "</tr>";
             }

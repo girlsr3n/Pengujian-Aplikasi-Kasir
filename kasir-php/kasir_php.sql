@@ -1,17 +1,14 @@
--- Gunakan database yang benar
 USE kasir;
 
--- Tabel produk
 CREATE TABLE IF NOT EXISTS products (
     id INT AUTO_INCREMENT PRIMARY KEY,
     nama VARCHAR(100) NOT NULL,
     harga INT NOT NULL,
     stok INT DEFAULT 0,
-     diskon INT DEFAULT 0,
+    diskon INT DEFAULT 0,
     kategori VARCHAR(100) NOT NULL
 );
 
--- Tabel pengguna
 CREATE TABLE IF NOT EXISTS users (
     id INT AUTO_INCREMENT PRIMARY KEY,
     username VARCHAR(50) UNIQUE NOT NULL,
@@ -19,7 +16,6 @@ CREATE TABLE IF NOT EXISTS users (
     role ENUM('admin', 'kasir') DEFAULT 'kasir'
 );
 
--- Tabel transaksi utama
 CREATE TABLE IF NOT EXISTS transactions (
     id INT AUTO_INCREMENT PRIMARY KEY,
     tanggal DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
@@ -27,7 +23,6 @@ CREATE TABLE IF NOT EXISTS transactions (
     metode_pembayaran VARCHAR(50) DEFAULT 'Tunai'
 );
 
--- Tabel detail transaksi
 CREATE TABLE IF NOT EXISTS transaction_items (
     id INT AUTO_INCREMENT PRIMARY KEY,
     transaksi_id INT NOT NULL,
