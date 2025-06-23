@@ -73,6 +73,8 @@ Kombinasi dari semua parameter di atas.
 ## 3. Regression Testing
 
 Menjalankan Test Case
+
+
 ![Alt Text](tc1.jpg) ![Alt Text](tc2.jpg)
 ![Alt Text](tc3.jpg) ![Alt Text](tc4.jpg)
 
@@ -84,6 +86,9 @@ Menjalankan Test Case
 ## 4. Regression Testing
 
 Menambahkan fitur-fitur baru:
+
+
+
 ![Alt Text](trans1.jpg)
 ![Alt Text](struk.jpg)
 
