@@ -77,13 +77,28 @@
 ---
 
 ## 3. Menjalankan Test Case
-> Test case telah dijalankan berdasarkan skenario uji di atas dan semua hasil telah diverifikasi sesuai ekspektasi.
+
+-![Alt Text](semuadiisi.jpg) ![Alt Text](semuakosong.jpg)
+
+-![Alt Text](stokkosong.jpg) ![Alt Text](namakosong.jpg)
+
+-![Alt Text](kategorikosong.jpg) ![Alt Text](hargakosong.jpg)
+
+-![Alt Text](diskon150.jpg) ![Alt Text](diskonkosong)
+
+
+
+
 
 ---
 
 ## 4. Regression Testing
 
 ### ✨ Fitur Baru yang Ditambahkan
+
+
+-![Alt Text](Transaksi2.jpg) ![Alt Text](Struk2.jpg)
+
 
 1. **Diskon**:  
    - Ditampilkan sebagai persentase di tabel transaksi  
