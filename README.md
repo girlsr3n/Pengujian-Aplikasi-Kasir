@@ -1,73 +1,66 @@
-# 🧾 Kasir PHP Project with Authentication & Software Testing
+# 🧾 Pengujian Aplikasi Kasir - PHP Native
 
 ## 📌 Deskripsi Proyek
-Proyek ini adalah aplikasi web kasir sederhana berbasis **PHP Native** yang mencakup fitur-fitur autentikasi pengguna (**Login dan Logout**), manajemen produk, serta pencatatan transaksi. Selain itu, proyek ini telah melewati proses pengujian perangkat lunak dengan pendekatan **Black Box**, **White Box**, dan **Grey Box Testing** untuk memastikan fungsionalitas dan keamanan sistem berjalan dengan baik.
+Aplikasi ini merupakan sistem kasir berbasis **PHP Native** yang sederhana namun fungsional. Aplikasi mendukung proses transaksi, manajemen produk, serta fitur login dan logout untuk keamanan pengguna. Pengujian dilakukan dengan pendekatan **Black Box**, **White Box**, dan **Grey Box Testing**.
 
 ---
 
-## 👥 Partisipan Proyek
+## 👥 Tim Proyek
 
-| Nama                   | Peran                  |
-|------------------------|------------------------|
-| Siti Rahmah            | 👨‍💻 Developer          |
-| Rifa Vida Zahrani      | 🧪 Black Box Tester     |
-| Khairunnisa Dwi W.      | ⚙️ White Box Tester     |
-| Ratna Santika          | 🧩 Grey Box Tester      |
+| Nama                  | Peran                  |
+|-----------------------|------------------------|
+| Siti Rahmah           | 👨‍💻 Developer           |
+| Rifa Vida Zahrani     | 🧪 Black Box Tester      |
+| Khairunnisa Dwi W.     | ⚙️ White Box Tester      |
+| Ratna Santika         | 🧩 Grey Box Tester       |
 
 ---
 
 ## 🚀 Fitur Utama
 
-- ✅ **Login & Logout**: Autentikasi dasar menggunakan username dan password.
-- 📦 **Manajemen Produk**: Tambah, edit, dan hapus produk.
-- 🛒 **Transaksi**: Input jumlah barang, simpan transaksi, tampilkan detail transaksi.
-- 📊 **Riwayat**: Melihat detail transaksi berdasarkan ID.
-- 🔐 **Keamanan Dasar**: Penggunaan prepared statements untuk mencegah SQL Injection.
+- ✅ Login & Logout pengguna
+- 📦 Manajemen produk: tambah, edit, hapus
+- 🛒 Transaksi: input produk dan kuantitas
+- 📊 Riwayat & detail transaksi
+- 🖨️ Cetak struk belanja
+- 🔐 Keamanan dasar (prepared statement)
 
 ---
 
-## 🧪 Pengujian Perangkat Lunak
+## 🧪 Pengujian
 
-### 🔲 1. Black Box Testing (Fungsionalitas)
-Pengujian dilakukan tanpa melihat kode sumber.  
-Fokus pada:
-- Validasi login dengan input valid dan tidak valid.
-- Proses tambah produk (input kosong, input harga/stok tidak valid).
-- Simulasi transaksi dengan dan tanpa produk.
-- Navigasi antar halaman.
+### 🔲 Black Box Testing
+- Validasi login berhasil/gagal
+- Tambah produk (input valid/tidak valid)
+- Simulasi transaksi dengan dan tanpa produk
+- Uji navigasi
 
-### ⚪ 2. White Box Testing (Struktur Kode)
-Pengujian logika dan struktur kode PHP.  
-Fokus pada:
-- Jalur percabangan (`if/else`) di login, tambah produk, dan proses transaksi.
-- Validasi input form.
-- Uji struktur pengulangan (loop) saat pemrosesan transaksi.
-- Penelusuran variabel (data flow) dan coverage script.
+### ⚪ White Box Testing
+- Uji logika PHP: `if`, `loop`, validasi input
+- Penelusuran variabel (data flow)
+- Coverage jalur eksekusi
 
-### 🔳 3. Grey Box Testing (Integrasi & Keamanan)
-Pengujian dilakukan dengan pemahaman terbatas terhadap struktur internal.  
-Fokus pada:
-- Integrasi antara form dan eksekusi query.
-- Uji simulasi input tidak sah (injeksi SQL manual, input kosong).
-- Pengujian keamanan query transaksi dan login.
+### 🔳 Grey Box Testing
+- Uji integrasi frontend ↔ backend
+- Cek keamanan query (injeksi, input kosong)
+- Uji kombinasi fungsionalitas
 
 ---
 
-## 🛠️ Teknologi yang Digunakan
+## 🛠️ Teknologi
 
-- **Backend**: PHP Native (tanpa framework)
-- **Frontend**: HTML, CSS, JavaScript
-- **Database**: MySQL
-- **Tools Uji**: Manual Testing, Xdebug, Browser DevTools
+- PHP Native (tanpa framework)
+- MySQL (phpMyAdmin)
+- HTML, CSS, JavaScript
+- XAMPP, Xdebug, DevTools
 
 ---
 
-## 📂 Struktur Direktori Utama
+## 📁 Struktur Direktori
 
 ```
 kasir-php/
 ├── create_admin.php
-├── daftar_produk.php
 ├── dashboar.php
 ├── db.php
 ├── detail_transaksi.php
@@ -83,31 +76,29 @@ kasir-php/
 ├── tambah_produk.php
 ├── transaksi.php
 └── transaksi_baru.php
+
 ```
 
+## ⚙️ Cara Menjalankan
+
+1. Ekstrak folder `kasir-php` ke `htdocs` (XAMPP).
+2. Import `kasir_php.sql` ke database lewat phpMyAdmin.
+3. Jalankan via browser:
+---
+   **http://localhost/kasir-php/login.php**
 ---
 
-## ⚙️ Cara Menjalankan Proyek
+## 📑 Dokumentasi Pengujian
 
-1. **Extract folder `kasir-php`** ke direktori `htdocs` (jika menggunakan XAMPP).
-2. **Import file `kasir_php.sql`** ke database MySQL melalui phpMyAdmin.
-3. Jalankan aplikasi di browser:
-   ```
-   http://localhost/kasir-php/login.php
-   ```
+File dokumentasi pengujian tersedia di repo GitHub:
+- `Black Box Testing.md`
+- `White Box Testing.md`
+- `Grey Box Testing.md`
 
----
-
-## 📊 Hasil Uji & Dokumentasi
-
-- Hasil pengujian tercatat secara manual oleh tim tester.
-- Laporan hasil uji tersedia dalam dokumen terpisah (Word/PDF/Excel), meliputi:
-  - Studi kasus pengujian login, transaksi, produk.
-  - Simulasi input tidak valid dan manipulasi data.
-  - Pemeriksaan struktur kode (flowchart, data flow, path testing).
+Berisi studi kasus, hasil uji, dan analisis kesalahan.
 
 ---
 
 ## 📃 Lisensi
 
-Proyek ini bebas digunakan untuk keperluan pembelajaran atau pengembangan, dengan tetap menyertakan atribusi kepada pembuat asli.
+Bebas digunakan untuk pembelajaran. Sertakan atribusi kepada pengembang asli.
