@@ -86,7 +86,7 @@ Pengujian dilakukan terhadap semua kondisi tersebut dengan input yang sesuai.
 | Logout | Logout | Keluar dari dashboard | Admin akan keluar dari dashboard dan harus login kembali |
 
 
-![Login Screenshot](df.png) 
+![Login Screenshot](Df1.png) 
 
 
 **6\. Basic Path Testing**
